@@ -3,6 +3,7 @@ package com.company;
 public class Book
 {
     public String book_name;
+    public Section section;
 
     public Book(String book_name)
     {
@@ -21,6 +22,11 @@ public class Book
     {
         System.out.println(table + " has been created.");
     }
+    public void addContent(Section section)
+    {
+        this.section = section;
+    }
+
     public void print()
     {
         System.out.println(book_name);
